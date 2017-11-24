@@ -27,3 +27,4 @@ public class IntefazController implements Initializable {
 
     @FXML
     Button BuscarBtn, InsertarBtn, ExtraerBtn, VaciarBtn, ContarBtn; //Declaración de los botones
+
