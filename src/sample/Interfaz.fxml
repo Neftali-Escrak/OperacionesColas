@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" />
+<Pane prefHeight="384.0" prefWidth="602.0" style="-fx-background-color: #FA5858;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.IntefazController">
+    <children>
+        <Label layoutX="-2.0" layoutY="1.0" prefHeight="40.0" prefWidth="602.0" style="-fx-background-color: #F7FE2E;" text="                                                      &quot;COLAS&quot;">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="35.0" layoutY="67.0" text="Insertar:" />
+        <TextField fx:id="InsertTxt" layoutX="85.0" layoutY="63.0" prefHeight="25.0" prefWidth="90.0" />
+        <Button fx:id="InsertarBtn" layoutX="194.0" layoutY="63.0" mnemonicParsing="false" text="Insertar" />
+        <Label layoutX="35.0" layoutY="124.0" text="Buscar Valor:" />
+        <TextField fx:id="BrowsTxt" layoutX="112.0" layoutY="120.0" prefHeight="25.0" prefWidth="90.0" />
+        <Button fx:id="BuscarBtn" layoutX="215.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Buscar" />
+        <Button fx:id="ExtraerBtn" layoutX="431.0" layoutY="161.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Extraer" translateX="50.0" translateY="-50.0" />
+        <Label layoutX="202.0" layoutY="197.0" text="Vaciar Cola:" />
+        <Button fx:id="VaciarBtn" layoutX="273.0" layoutY="193.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Vaciar" />
+        <ImageView fitHeight="150.0" fitWidth="175.0" layoutX="402.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" translateX="-404.0">
+            <image>
+                <Image url="@../images/42190829-tienda-con-pensi-n-espacio-de-la-copia.jpg" />
+            </image>
+        </ImageView>
+        <HBox fx:id="Box" alignment="BOTTOM_LEFT" layoutX="-3.0" layoutY="321.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="432.0" style="-fx-background-color: #E6E6E6;" translateX="150.0" translateY="-4.0" />
+        <Button fx:id="ContarBtn" layoutX="479.0" layoutY="63.0" mnemonicParsing="false" text="Tamaño" />
+    </children>
+</Pane>
